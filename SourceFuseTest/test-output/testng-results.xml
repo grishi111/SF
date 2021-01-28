@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-12-07T23:17:53 IST" name="Default suite" finished-at="2020-12-07T23:18:18 IST" duration-ms="25506">
+    <groups>
+    </groups>
+    <test started-at="2020-12-07T23:17:53 IST" name="Default test" finished-at="2020-12-07T23:18:18 IST" duration-ms="25506">
+      <class name="Test.Tests">
+        <test-method is-config="true" signature="SetExtent()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:17:53 IST" name="SetExtent" finished-at="2020-12-07T23:17:53 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetExtent -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:17:53 IST" name="setup" finished-at="2020-12-07T23:17:58 IST" duration-ms="4841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Case_1()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:17:58 IST" name="Test_Case_1" finished-at="2020-12-07T23:18:00 IST" duration-ms="1768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Case_1 -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:00 IST" name="TearDown" finished-at="2020-12-07T23:18:00 IST" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Case_1 status=SUCCESS method=Tests.Test_Case_1()[pri:0, instance:Test.Tests@3a079870] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:00 IST" name="setup" finished-at="2020-12-07T23:18:03 IST" duration-ms="3300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Case_2()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:03 IST" name="Test_Case_2" finished-at="2020-12-07T23:18:10 IST" duration-ms="7181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Case_2 -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:10 IST" name="TearDown" finished-at="2020-12-07T23:18:10 IST" duration-ms="72" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Case_2 status=SUCCESS method=Tests.Test_Case_2()[pri:0, instance:Test.Tests@3a079870] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:10 IST" name="setup" finished-at="2020-12-07T23:18:14 IST" duration-ms="3395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Test_Case_3()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:14 IST" name="Test_Case_3" finished-at="2020-12-07T23:18:17 IST" duration-ms="3382" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[This is required and message should be showing did not expect to find [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: This is required and message should be showing did not expect to find [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at Test.Page.VerifyFieldsHardAssert(Page.java:126)
+at Test.Page.VerifyFieldsLabels(Page.java:106)
+at Test.Tests.Test_Case_3(Tests.java:96)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_Case_3 -->
+        <test-method is-config="true" signature="TearDown(org.testng.ITestResult)[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:17 IST" name="TearDown" finished-at="2020-12-07T23:18:18 IST" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_Case_3 status=FAILURE method=Tests.Test_Case_3()[pri:0, instance:Test.Tests@3a079870] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="EndReport()[pri:0, instance:Test.Tests@3a079870]" started-at="2020-12-07T23:18:18 IST" name="EndReport" finished-at="2020-12-07T23:18:18 IST" duration-ms="677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EndReport -->
+      </class> <!-- Test.Tests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
